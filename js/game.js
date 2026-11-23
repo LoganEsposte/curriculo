@@ -174,8 +174,13 @@ $('ano').textContent = new Date().getFullYear();
 desenharSprite();
 pintarXp();
 try {
-  const r = await fetch('/data/site.json', { cache: 'no-cache' });
-  renderSite(await r.json());
+  const r = await fetch('data/site.json', { cache: 'no-cache' });
+  const site = await r.json();
+  // caminhos de imagem relativos: o site funciona em qualquer subpasta (ex.: GitHub Pages)
+  const rel = (p) => { if (p && p.url) p.url = p.url.replace(/^\/+/, ''); };
+  site.projetos.flyover.perfis.forEach((pf) => (pf.prints || []).forEach(rel));
+  (site.projetos.orcamentos.prints || []).forEach(rel);
+  renderSite(site);
 } catch {
   $('hTitulo').textContent = 'Não foi possível carregar o conteúdo.';
 }
