@@ -1,0 +1,250 @@
+{
+  "perfil": {
+    "nome": "Logan Esposte",
+    "titulo": "TI & Dev em evolução",
+    "nivel": 30,
+    "local": "Angra dos Reis - RJ",
+    "email": "loganesposte@outlook.com",
+    "sobre": "Sou profissional de TI e desenvolvedor em constante aprendizado. Meu foco é entender os problemas na prática e construir soluções simples que realmente funcionem no dia a dia.\n\nTrabalho com suporte e infraestrutura de TI (redes, sistemas e manutenção de ambientes) e, em paralelo, desenvolvo projetos web e pequenas automações com JavaScript e Python, apoiado por Claude Code e outras IAs, transformando tarefas manuais em processos organizados.\n\nAprender fazendo: testar, errar e ajustar até funcionar. Evolução passo a passo, estudando full-stack e boas práticas de arquitetura e montando um portfólio com projetos reais."
+  },
+  "whatsapp": {
+    "numero": "5524999417157",
+    "mensagem": "Olá Logan! Vi seu portfólio e gostaria de conversar."
+  },
+  "skills": [
+    {
+      "nome": "Montagem e manutenção de PCs",
+      "nivel": 95
+    },
+    {
+      "nome": "Elétrica e automação industrial",
+      "nivel": 92
+    },
+    {
+      "nome": "Pacote Office / LibreOffice",
+      "nivel": 90
+    },
+    {
+      "nome": "Redes e Sistemas Operacionais",
+      "nivel": 88
+    },
+    {
+      "nome": "Claude Code e IAs",
+      "nivel": 80
+    },
+    {
+      "nome": "HTML / CSS / JavaScript",
+      "nivel": 70
+    },
+    {
+      "nome": "Automações e lógica",
+      "nivel": 65
+    },
+    {
+      "nome": "Git e GitHub",
+      "nivel": 60
+    },
+    {
+      "nome": "Python",
+      "nivel": 50
+    },
+    {
+      "nome": "PostgreSQL / SQL",
+      "nivel": 40
+    },
+    {
+      "nome": "Node.js / Express",
+      "nivel": 35
+    }
+  ],
+  "experiencia": [
+    {
+      "cargo": "Técnico de processamento de dados",
+      "empresa": "Instituto de Saúde HSVP",
+      "periodo": "07/2025 - atual",
+      "descricao": "Suporte e processamento de dados em ambiente de saúde."
+    },
+    {
+      "cargo": "Vigilante noturno",
+      "empresa": "GP - Guarda Patrimonial de São Paulo",
+      "periodo": "10/2022 - atual",
+      "descricao": "Segurança patrimonial e rotina operacional."
+    },
+    {
+      "cargo": "Gerente",
+      "empresa": "Huma Parafusos de Angra",
+      "periodo": "01/2020 - 04/2022",
+      "descricao": "Gestão da loja, equipe, estoque e vendas."
+    },
+    {
+      "cargo": "Vendedor",
+      "empresa": "Huma Parafusos de Angra",
+      "periodo": "02/2019 - 09/2019",
+      "descricao": "Atendimento e vendas."
+    },
+    {
+      "cargo": "Instalador de segurança eletrônica",
+      "empresa": "Tele Litorânea de Angra",
+      "periodo": "05/2014 - 12/2015",
+      "descricao": "Instalação de sistemas de segurança eletrônica."
+    },
+    {
+      "cargo": "Jovem Aprendiz - Eletricista de Manutenção Industrial",
+      "empresa": "Eletronuclear",
+      "periodo": "08/2012 - 10/2013",
+      "descricao": "Manutenção elétrica industrial."
+    }
+  ],
+  "formacao": [
+    {
+      "curso": "Engenharia de Software",
+      "instituicao": "Anhanguera",
+      "periodo": "conclusão 06/2027"
+    },
+    {
+      "curso": "Curso Técnico de Informática",
+      "instituicao": "",
+      "periodo": "cursando · previsão de conclusão 25/11/2026"
+    },
+    {
+      "curso": "Tecnólogo em Sistemas de Computação",
+      "instituicao": "CEDERJ",
+      "periodo": "2 períodos (2021)"
+    },
+    {
+      "curso": "Engenharia de Produção",
+      "instituicao": "CEDERJ",
+      "periodo": "4 períodos (2018/19)"
+    },
+    {
+      "curso": "Eletricista de Manutenção Industrial",
+      "instituicao": "SENAI / Eletronuclear",
+      "periodo": "2013"
+    },
+    {
+      "curso": "Habilitação categoria AB",
+      "instituicao": "DETRAN",
+      "periodo": ""
+    }
+  ],
+  "projetos": {
+    "flyover": {
+      "titulo": "Flyover",
+      "descricao": "Plataforma de escola de idiomas com portal para aluno, responsável, professor, pedagógico e financeiro. Em desenvolvimento: aqui você vê a página inicial e prints de cada perfil.",
+      "stack": "Node 20, Express 5, PostgreSQL, HTML/CSS/JS puro",
+      "perfis": [
+        {
+          "id": "aluno",
+          "titulo": "Aluno",
+          "prints": [
+            {
+              "url": "/assets/prints/flyover/aluno/01-inicio.png",
+              "legenda": "inicio"
+            },
+            {
+              "url": "/assets/prints/flyover/aluno/02-agenda.png",
+              "legenda": "agenda"
+            },
+            {
+              "url": "/assets/prints/flyover/aluno/03-desempenho.png",
+              "legenda": "desempenho"
+            },
+            {
+              "url": "/assets/prints/flyover/aluno/04-pratica.png",
+              "legenda": "pratica"
+            }
+          ]
+        },
+        {
+          "id": "responsavel",
+          "titulo": "Responsável",
+          "prints": [
+            {
+              "url": "/assets/prints/flyover/responsavel/01-inicio.png",
+              "legenda": "inicio"
+            },
+            {
+              "url": "/assets/prints/flyover/responsavel/02-agenda.png",
+              "legenda": "agenda"
+            },
+            {
+              "url": "/assets/prints/flyover/responsavel/03-dependentes.png",
+              "legenda": "dependentes"
+            }
+          ]
+        },
+        {
+          "id": "professor",
+          "titulo": "Professor",
+          "prints": [
+            {
+              "url": "/assets/prints/flyover/professor/01-inicio.png",
+              "legenda": "inicio"
+            },
+            {
+              "url": "/assets/prints/flyover/professor/02-turmas.png",
+              "legenda": "turmas"
+            },
+            {
+              "url": "/assets/prints/flyover/professor/03-agenda.png",
+              "legenda": "agenda"
+            },
+            {
+              "url": "/assets/prints/flyover/professor/04-ead-progresso.png",
+              "legenda": "ead progresso"
+            }
+          ]
+        },
+        {
+          "id": "financeiro",
+          "titulo": "Financeiro / Pedagógico",
+          "prints": [
+            {
+              "url": "/assets/prints/flyover/financeiro/01-inicio.png",
+              "legenda": "inicio"
+            },
+            {
+              "url": "/assets/prints/flyover/financeiro/02-inicio.png",
+              "legenda": "inicio"
+            },
+            {
+              "url": "/assets/prints/flyover/financeiro/03-usuarios.png",
+              "legenda": "usuarios"
+            }
+          ]
+        }
+      ]
+    },
+    "orcamentos": {
+      "titulo": "Agendador de Serviços",
+      "descricao": "PWA mobile-first para prestadores de serviço: clientes, catálogo, orçamentos, ordens de serviço e recibos em PDF. Aqui você vê as telas reais, no tamanho de um celular.",
+      "stack": "Node, Express 5, PostgreSQL, PWA",
+      "prints": [
+        {
+          "url": "/assets/prints/orcamentos/01-inicio.jpg",
+          "legenda": "painel do mês"
+        },
+        {
+          "url": "/assets/prints/orcamentos/02-clientes.jpg",
+          "legenda": "clientes"
+        },
+        {
+          "url": "/assets/prints/orcamentos/03-orcamentos.jpg",
+          "legenda": "lista de orçamentos"
+        },
+        {
+          "url": "/assets/prints/orcamentos/04-orcamento-detalhe.jpg",
+          "legenda": "detalhe do orçamento"
+        },
+        {
+          "url": "/assets/prints/orcamentos/05-ordens-de-servico.jpg",
+          "legenda": "ordens de serviço"
+        },
+        {
+          "url": "/assets/prints/orcamentos/06-mais.jpg",
+          "legenda": "menu mais"
+        }
+      ]
+    }
+  }
+}

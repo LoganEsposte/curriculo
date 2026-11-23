@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Logan Esposte | Portfólio</title>
+  <meta name="description" content="Currículo e portfólio de Logan Esposte, em formato de jogo 8 bits.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Crect width='8' height='8' fill='%231a1c2c'/%3E%3Crect x='1' y='1' width='6' height='6' fill='%23ffcd75'/%3E%3Crect x='2' y='2' width='1' height='1' fill='%231a1c2c'/%3E%3Crect x='5' y='2' width='1' height='1' fill='%231a1c2c'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/pixel.css">
+</head>
+<body>
+  <header class="hud" id="hud">
+    <a class="hud__logo" href="#inicio" aria-label="Início">LE<span>_</span></a>
+    <nav class="hud__nav" id="nav" aria-label="Seções">
+      <a href="#skills">Skills</a>
+      <a href="#missoes">Missões</a>
+      <a href="#conquistas">Formação</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <div class="hud__xp" title="Conquistas desbloqueadas">
+      <span class="hud__xp-label">XP <b id="xpTxt">0/8</b></span>
+      <span class="bar"><span class="bar__fill" id="xpFill" style="width:0%"></span></span>
+    </div>
+  </header>
+
+  <main>
+    <!-- INÍCIO -->
+    <section class="hero" id="inicio" data-ach="inicio">
+      <div class="hero__stars" aria-hidden="true"></div>
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <p class="blink press">PRESS START</p>
+          <h1 id="hNome">Logan Esposte</h1>
+          <p class="hero__title" id="hTitulo"></p>
+          <div class="hero__cta">
+            <a class="btn btn--gold" href="#projetos">▶ Projetos recentes</a>
+            <a class="btn" href="#missoes">Ver currículo</a>
+          </div>
+        </div>
+        <div class="card char">
+          <div class="char__head">
+            <svg id="sprite" class="sprite" viewBox="0 0 12 13" shape-rendering="crispEdges" aria-hidden="true"></svg>
+            <div>
+              <h2 class="char__name" id="cNome"></h2>
+              <p class="char__lvl">NÍVEL <b id="cNivel"></b></p>
+              <p class="char__loc" id="cLocal"></p>
+            </div>
+          </div>
+          <div class="stat"><span>HP</span><span class="bar bar--hp"><span class="bar__fill" style="width:92%"></span></span></div>
+          <div class="stat"><span>MP</span><span class="bar bar--mp"><span class="bar__fill" style="width:78%"></span></span></div>
+          <div class="stat"><span>XP</span><span class="bar"><span class="bar__fill" id="cXp" style="width:0%"></span></span></div>
+          <div class="prose" id="cSobre"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills" data-ach="skills">
+      <div class="container">
+        <h2 class="title"><span>01</span> Skills</h2>
+        <p class="lead">Atributos do personagem. Quanto mais cheia a barra, mais horas de jogo.</p>
+        <div class="skills" id="skillsList"></div>
+      </div>
+    </section>
+
+    <!-- MISSÕES -->
+    <section class="section section--alt" id="missoes" data-ach="missoes">
+      <div class="container">
+        <h2 class="title"><span>02</span> Missões <small>(experiência)</small></h2>
+        <ol class="quests" id="questList"></ol>
+      </div>
+    </section>
+
+    <!-- CONQUISTAS -->
+    <section class="section" id="conquistas" data-ach="formacao">
+      <div class="container">
+        <h2 class="title"><span>03</span> Conquistas <small>(formação)</small></h2>
+        <div class="badges" id="badgeList"></div>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section class="section section--alt" id="projetos" data-ach="projetos">
+      <div class="container">
+        <h2 class="title"><span>04</span> Projetos recentes</h2>
+        <p class="lead">Escolha uma fase:</p>
+        <div class="tabs" role="tablist">
+          <button class="tab is-active" role="tab" id="tabFlyover" aria-controls="panelFlyover" aria-selected="true" data-tab="flyover">★ Fase 1 · Flyover</button>
+          <button class="tab" role="tab" id="tabOrc" aria-controls="panelOrc" aria-selected="false" data-tab="orcamentos">★ Fase 2 · Orçamentos (mobile)</button>
+        </div>
+
+        <!-- FLYOVER -->
+        <div class="panel" id="panelFlyover" role="tabpanel" aria-labelledby="tabFlyover">
+          <div class="proj-info">
+            <h3 id="fTitulo"></h3>
+            <p id="fDesc"></p>
+            <p class="stack" id="fStack"></p>
+          </div>
+          <div class="hint">
+            <span class="hint__arrow" aria-hidden="true">👉</span>
+            <span><b>Recrutador:</b> clique em <b>ACESSAR PLATAFORMA</b> para ver as telas de cada perfil (aluno, responsável, professor e financeiro).</span>
+          </div>
+          <div class="browser">
+            <div class="browser__bar">
+              <i></i><i></i><i></i>
+              <span class="browser__url">flyover · página inicial (cópia estática)</span>
+              <button class="btn btn--gold btn--pulse" id="btnPlataforma" type="button">Acessar plataforma ↗</button>
+            </div>
+            <iframe class="browser__frame" title="Página inicial do Flyover" src="/assets/flyover-home/index.html" loading="lazy"></iframe>
+          </div>
+        </div>
+
+        <!-- ORÇAMENTOS -->
+        <div class="panel" id="panelOrc" role="tabpanel" aria-labelledby="tabOrc" hidden>
+          <div class="orc">
+            <div class="phone" aria-label="Moldura de celular">
+              <div class="phone__notch"></div>
+              <img class="phone__screen" id="orcImg" alt="Tela do sistema de orçamentos">
+              <div class="phone__home"></div>
+            </div>
+            <div class="card orc__info">
+              <h3 id="oTitulo"></h3>
+              <p id="oDesc"></p>
+              <p class="stack" id="oStack"></p>
+              <div class="cred">
+                <p class="cred__title">▼ Escolha uma tela</p>
+                <div class="screens" id="orcLista"></div>
+                <p class="cred__note" id="orcCap"></p>
+              </div>
+              <p class="mobile-note">📱 Pensado para celular: o sistema aparece no tamanho de um smartphone de propósito.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="section" id="contato" data-ach="contato">
+      <div class="container contact">
+        <h2 class="title"><span>05</span> Contato</h2>
+        <p class="lead">Quer tirar uma ideia do papel? Chame o player 1.</p>
+        <a class="btn btn--wa btn--lg" id="waBig" target="_blank" rel="noopener">💬 Chamar no WhatsApp</a>
+        <p><a class="mail" id="mail"></a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="ano"></span> Logan Esposte · feito com HTML, CSS e JS puro · GAME OVER? <b class="blink">CONTINUE?</b></p>
+  </footer>
+
+  <a class="wa-float" id="waFloat" target="_blank" rel="noopener" aria-label="Chamar no WhatsApp">
+    <svg viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true"><path fill="#fff" d="M3 1h10v1h1v10h-1v1H8v1H6v1H5v-1H4v-1H3v-1H2V2h1z"/><path fill="#25d366" d="M3 2h10v10H8v1H6v1H5v-1H4v-1H3z"/><path fill="#fff" d="M5 4h2v1H6v1h1v1h1v1h1v1h1V9h1v2h-2V10H8V9H7V8H6V7H5z"/></svg>
+    <span>WhatsApp</span>
+  </a>
+
+  <!-- Camada de janelas (Flyover) -->
+  <div class="winlayer" id="winLayer" aria-live="polite"></div>
+  <div class="dock" id="dock" hidden></div>
+  <div class="toast" id="toast" role="status" hidden></div>
+
+  <script type="module" src="/js/game.js"></script>
+</body>
+</html>
